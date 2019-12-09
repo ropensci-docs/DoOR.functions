@@ -1,0 +1,12 @@
+pandoc: '2.5'
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  DoOR.functions_main: DoOR.functions_main.html
+  DoOR_tools: DoOR_tools.html
+  DoOR_visualizations: DoOR_visualizations.html
+last_built: 2021-07-17T16:24Z
+urls:
+  reference: https://docs.ropensci.org/DoOR.functions/reference
+  article: https://docs.ropensci.org/DoOR.functions/articles
+
