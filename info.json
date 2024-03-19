@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "14728b933e5829a558687ae04b3f33c366ccede7",
+    "author": "Daniel Münch <daniel@piffpaff.lan>",
+    "time": "2024-02-18 22:24:00",
+    "files": 0,
+    "merge": true,
+    "message": "Merge branch 'master' of github.com:Dahaniel/DoOR.functions\n"
+  },
+  "repo": "https://github.com/ropensci/DoOR.functions",
+  "pkg": "DoOR.functions"
+}
