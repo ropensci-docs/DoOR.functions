@@ -1,0 +1,51 @@
+# ' select the best model function
+
+`calculate_model` is used to return the best model function that
+represent the relationship between responses from study x and y.
+
+## Usage
+
+``` r
+calculate_model(x, y, select.MD = door_default_values("select.MD"))
+```
+
+## Arguments
+
+- x, y:
+
+  data vectors from study x and y (can contain NA)
+
+- select.MD:
+
+  logical, if TRUE, only the best model function (in terms of MD) will
+  be returned.
+
+## Details
+
+`calculate_model` chooses the best model function from following:
+linear, exponential function, sigmoid, asymptotic model with x
+intercept, asympototic model with y intercept and their inverse
+versions. (If your are interested in these functions please check the
+sources at https://github.com/Dahaniel/DoOR.functions)
+
+## Author
+
+Shouwen Ma \<<shouwen.ma@uni-konstanz.de>\>
+
+Daniel Münch \<<daniel.muench@uni-konstanz.de>\>
+
+## Examples
+
+``` r
+# load a data set
+library(DoOR.data)
+data(Or35a)
+
+# pick 2 data sets for Or35a and rescale the data [0,1]
+x <- door_norm(Or35a[,6])
+y <- door_norm(Or35a[,9])
+# run calculate_model
+calM_xy <- calculate_model(x,y, select.MD = door_default_values("select.MD"))
+#> Warning: selfStart initializing functions should have a final '...' argument since R 4.1.0
+#> Warning: selfStart initializing functions should have a final '...' argument since R 4.1.0
+```

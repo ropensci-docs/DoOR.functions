@@ -1,0 +1,122 @@
+# DoOR.functions
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.375617.svg)](http://dx.doi.org/10.5281/zenodo.375617)
+[![](https://badges.ropensci.org/34_status.svg)](https://github.com/ropensci/onboarding/issues/34)
+[![Travis-CI Build
+Status](https://travis-ci.org/ropensci/DoOR.functions.svg?branch=master)](https://travis-ci.org/ropensci/DoOR.functions)
+
+R package containing the functions used to build the Database of Odor
+Responses. The corresponding data package can be found at
+<https://github.com/ropensci/DoOR.data>.
+
+## The DoOR Project
+
+Find more information, precompiled R-packages and an interactive
+web-version of the DoOR-Database at: **<http://neuro.uni.kn/DoOR>**
+
+## Install
+
+Install latest version from master branch or specific version *via*
+`pak`: \`\`\`{r} \# install pak install.packages(“pak”)
+pak::pak(‘<ropensci/DoOR.functions@master>’)
+
+# install DoOR.functions 2.0.1
+
+pak::pak(‘<ropensci/DoOR.functions@v2.0.1>’) \`\`\`
+
+## Publications
+
+DoOR was first published in 2010, the OpenAccess publication is
+available from <http://chemse.oxfordjournals.org/content/35/7/551>
+
+An OpenAccess publication regarding the comprehensive update to **DoOR
+version 2.0** is available from A preprint of manuscript related to DoOR
+2.0 can be found at bioRxiv: <http://www.nature.com/articles/srep21841>
+
+# Package index
+
+## All functions
+
+- [`DoOR.functions-package`](https://docs.ropensci.org/DoOR.functions/reference/DoOR.functions.package.md)
+  [`DoOR.functions.package`](https://docs.ropensci.org/DoOR.functions/reference/DoOR.functions.package.md)
+  [`DoOR.functions`](https://docs.ropensci.org/DoOR.functions/reference/DoOR.functions.package.md)
+  [`DoOR.function`](https://docs.ropensci.org/DoOR.functions/reference/DoOR.functions.package.md)
+  : DoOR Functions
+- [`back_project()`](https://docs.ropensci.org/DoOR.functions/reference/back_project.md)
+  : back_project
+- [`calculate_model()`](https://docs.ropensci.org/DoOR.functions/reference/calculate_model.md)
+  : ' select the best model function
+- [`count_studies()`](https://docs.ropensci.org/DoOR.functions/reference/count_studies.md)
+  : count_studies
+- [`create_door_database()`](https://docs.ropensci.org/DoOR.functions/reference/create_door_database.md)
+  : Compose a Response Matrix of All Odor Receptors
+- [`door_default_values()`](https://docs.ropensci.org/DoOR.functions/reference/door_default_values.md)
+  : default values for DoOR functions
+- [`door_norm()`](https://docs.ropensci.org/DoOR.functions/reference/door_norm.md)
+  : rescale the data values from 0 to 1
+- [`dplot_across_osns()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_across_osns.md)
+  : dplot_across_osns
+- [`dplot_across_ru()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_across_ru.md)
+  : dplot_across_ru
+- [`dplot_al_map()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_al_map.md)
+  : dplot_al_map
+- [`dplot_compare_profiles()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_compare_profiles.md)
+  : Compare two response profiles
+- [`dplot_response_matrix()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_response_matrix.md)
+  : dplot_response_matrix
+- [`dplot_response_profile()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_response_profile.md)
+  : dplot_response_profile
+- [`dplot_tuningCurve()`](https://docs.ropensci.org/DoOR.functions/reference/dplot_tuningCurve.md)
+  : dplot_tuningCurve
+- [`estimate_missing_value()`](https://docs.ropensci.org/DoOR.functions/reference/estimate_missing_value.md)
+  : Estimate the missing entries in a response data
+- [`export_door_data()`](https://docs.ropensci.org/DoOR.functions/reference/export_door_data.md)
+  : export data
+- [`get_dataset()`](https://docs.ropensci.org/DoOR.functions/reference/get_dataset.md)
+  : getDataset
+- [`get_normalized_responses()`](https://docs.ropensci.org/DoOR.functions/reference/get_normalized_responses.md)
+  : Find normalised receptor responses
+- [`get_responses()`](https://docs.ropensci.org/DoOR.functions/reference/get_responses.md)
+  : Find receptor responses
+- [`identify_sensillum()`](https://docs.ropensci.org/DoOR.functions/reference/identify_sensillum.md)
+  : identify_sensillum
+- [`import_new_data()`](https://docs.ropensci.org/DoOR.functions/reference/import_new_data.md)
+  : Import new data into DoOR
+- [`load2list()`](https://docs.ropensci.org/DoOR.functions/reference/load2list.md)
+  : load2list
+- [`map_receptor()`](https://docs.ropensci.org/DoOR.functions/reference/map_receptor.md)
+  : map_receptor
+- [`model_response()`](https://docs.ropensci.org/DoOR.functions/reference/model_response.md)
+  : Generates a model response
+- [`model_response_seq()`](https://docs.ropensci.org/DoOR.functions/reference/model_response_seq.md)
+  : model_response_seq
+- [`private_odorant()`](https://docs.ropensci.org/DoOR.functions/reference/private_odorant.md)
+  : private_odorant
+- [`project_points()`](https://docs.ropensci.org/DoOR.functions/reference/project_points.md)
+  : project_points
+- [`remove_study()`](https://docs.ropensci.org/DoOR.functions/reference/remove_study.md)
+  : Remove a study from DoOR
+- [`reset_sfr()`](https://docs.ropensci.org/DoOR.functions/reference/reset_sfr.md)
+  : reset SFR
+- [`select_model()`](https://docs.ropensci.org/DoOR.functions/reference/select_model.md)
+  : compute the data pairwise and and selects a pair with the lowest
+  "MD" value.
+- [`sparse()`](https://docs.ropensci.org/DoOR.functions/reference/sparse.md)
+  : Calculate the sparseness of a vector.
+- [`trans_id()`](https://docs.ropensci.org/DoOR.functions/reference/trans_id.md)
+  : trans_id
+- [`update_door_database()`](https://docs.ropensci.org/DoOR.functions/reference/update_door_database.md)
+  : update response matrix
+- [`update_door_odorinfo()`](https://docs.ropensci.org/DoOR.functions/reference/update_door_odorinfo.md)
+  : update_door_odorinfo
+
+# Articles
+
+### All vignettes
+
+- [DoOR analysis
+  tools](https://docs.ropensci.org/DoOR.functions/articles/DoOR_tools.md):
+- [Visualizing
+  DoOR](https://docs.ropensci.org/DoOR.functions/articles/DoOR_visualizations.md):
+- [The Database of Odor Responses - DoOR functions
+  package](https://docs.ropensci.org/DoOR.functions/articles/DoOR.functions_main.md):
